@@ -178,7 +178,7 @@
                         .finally(() => {
                             console.log("Message sent - finally");
                         });
-                }, 2000);
+                }, 5000);
             }
             
             const sendBtn = document.getElementById('sendBtn');
