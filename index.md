@@ -120,9 +120,13 @@
     </head>
     
     <body>
+        <div>
+            Welcome to our Chat Service!
+            <br/>
+        </div>
         <div class="chat-container">
             <div>
-                Welcome to our Chat Service!
+                Please select the menu or enter the message to get started.
                 <br/>
             </div>
             <div>
