@@ -140,7 +140,6 @@
 		}
 	}
 
-	;
 	</script><script type='text/javascript'src='https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654/assets/js/bootstrap.min.js'onload='initEmbeddedMessaging()'></script>
 	</style>
 
