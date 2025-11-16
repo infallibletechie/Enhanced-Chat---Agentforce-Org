@@ -195,7 +195,7 @@
             .finally(() => {
               console.log("Message sent - finally");
             });
-        }, 3000);
+        }, 5000);
       }
       const sendBtn = document.getElementById('sendBtn');
       const chatInput = document.getElementById('chatInput');
