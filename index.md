@@ -122,7 +122,7 @@
     <body>
         <div>
             Welcome to our Chat Service!
-            <br/>
+            <br/><br/>
         </div>
         <div class="chat-container">
             <div>
