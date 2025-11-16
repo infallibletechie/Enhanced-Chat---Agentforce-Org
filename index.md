@@ -119,13 +119,13 @@
 			});
 			/* END:: Button Created Listener */
 			
-			embeddedservice_bootstrap.init('00DKj00000BqFBw',
-			'Enhanced_Chat',
-			'https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654',
+			embeddedservice_bootstrap.init(
+				'00DKj00000BqFBw',
+				'Enhanced_Chat',
+				'https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654',
 				{
-				scrt2URL: 'https://mduraipand-250112-382-demo.my.salesforce-scrt.com'
-			}
-
+					scrt2URL: 'https://mduraipand-250112-382-demo.my.salesforce-scrt.com'
+				} 
 			);
 		}
 
