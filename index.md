@@ -119,10 +119,11 @@
           });
           /* END:: Button Created Listener */
           embeddedservice_bootstrap.init(
-            '00DHo000002fRR9',
-            'MIAW',
-            'https://infallibletechie2-dev-ed.develop.my.site.com/ESWMIAW1754416406121', {
-              scrt2URL: 'https://infallibletechie2-dev-ed.develop.my.salesforce-scrt.com'
+            '00DKj00000BqFBw',
+            'Enhanced_Chat',
+            'https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654',
+            {
+            scrt2URL: 'https://mduraipand-250112-382-demo.my.salesforce-scrt.com'
             }
           );
         } catch (err) {
@@ -131,8 +132,7 @@
       }
     </script>
 
-    <script type="text/javascript" src="https://infallibletechie2-dev-ed.develop.my.site.com/ESWMIAW1754416406121/assets/js/bootstrap.min.js" onload="initEmbeddedMessaging()">
-    </script>
+    <script type='text/javascript' src='https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
   </head>
 
   <body>
