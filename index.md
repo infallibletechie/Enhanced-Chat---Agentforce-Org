@@ -73,50 +73,50 @@
             }
         </style>
 
-        <
-script type = "text/javascript" >
-    function initEmbeddedMessaging() {
-        try {
-            embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
-            
-            // Hiding Chat Button on page load
-            embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
-            
-            /* START:: Conversation Opened Listener */
-            window.addEventListener("onEmbeddedMessagingConversationOpened", (event) => {
-                hideChatContainer();
-            });
-            /* END:: Conversation Opened Listener */
-
-            /* START:: Conversation Closed Listener */
-            window.addEventListener("onEmbeddedMessagingWindowClosed", (event) => {
-                showChatContainer();
-            });
-            /* END:: Conversation Closed Listener */
-
-            /* START:: Button Created Listener */
-            window.addEventListener("onEmbeddedMessagingButtonCreated", (event) => {
-                showChatContainer();
-            });
-            /* END:: Button Created Listener */
-
-            embeddedservice_bootstrap.init(
-                '00DKj00000BqFBw',
-                'Enhanced_Chat',
-                'https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654', {
-                    scrt2URL: 'https://mduraipand-250112-382-demo.my.salesforce-scrt.com'
+        <script type = "text/javascript">
+            function initEmbeddedMessaging() {
+                try {
+                    embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+                    
+                    // Hiding Chat Button on page load
+                    embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
+                    
+                    /* START:: Conversation Opened Listener */
+                    window.addEventListener("onEmbeddedMessagingConversationOpened", (event) => {
+                        hideChatContainer();
+                    });
+                    /* END:: Conversation Opened Listener */
+        
+                    /* START:: Conversation Closed Listener */
+                    window.addEventListener("onEmbeddedMessagingWindowClosed", (event) => {
+                        showChatContainer();
+                    });
+                    /* END:: Conversation Closed Listener */
+        
+                    /* START:: Button Created Listener */
+                    window.addEventListener("onEmbeddedMessagingButtonCreated", (event) => {
+                        showChatContainer();
+                    });
+                    /* END:: Button Created Listener */
+        
+                    embeddedservice_bootstrap.init(
+                        '00DKj00000BqFBw',
+                        'Enhanced_Chat',
+                        'https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654', 
+                        {
+                            scrt2URL: 'https://mduraipand-250112-382-demo.my.salesforce-scrt.com'
+                        }
+                    );
+                } catch (err) {
+                    console.error('Error loading Embedded Messaging: ', err);
                 }
-            );
-        } catch (err) {
-            console.error('Error loading Embedded Messaging: ', err);
-        }
-    } 
-    </script> 
-    <script 
-        type = 'text/javascript'
-        src = 'https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654/assets/js/bootstrap.min.js'
-        onload = 'initEmbeddedMessaging()'> 
-    </script>
+            } 
+        </script>
+        <script 
+            type = 'text/javascript'
+            src = 'https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654/assets/js/bootstrap.min.js'
+            onload = 'initEmbeddedMessaging()'> 
+        </script>
     </head>
     
     <body>
