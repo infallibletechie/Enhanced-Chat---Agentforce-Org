@@ -152,8 +152,6 @@
 			<button class="send-message-button" id="caseButton"> Need help with my Case </button>
 		</div>
 	</div>
-	<script>
-	</script>
 </body>
 
 </html>
