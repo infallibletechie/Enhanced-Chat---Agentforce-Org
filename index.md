@@ -220,8 +220,7 @@
                 const caseButtonText = caseButton.textContent.trim();
                 // Display the text in the browser's console
                 console.log(caseButtonText);
-                launchChat();
-                sendMessageToChat(caseButtonText);
+                launchChat(caseButtonText);
             }); 
         </script>
     </body>
