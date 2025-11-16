@@ -170,10 +170,11 @@
         chatContainer.style.display = 'none';
       }
 
-      function launchChat() {
+      function launchChat(message) {
         embeddedservice_bootstrap.utilAPI.launchChat()
           .then(() => {
             console.log('Successfully launched Messaging');
+            sendMessageToChat(message);
           })
           .catch(() => {
             console.log('Some error occurred when launching Messaging');
@@ -205,8 +206,7 @@
           console.log(message);
           chatInput.value = '';
           hideChatContainer();
-          launchChat();
-          sendMessageToChat(message);
+          launchChat(message);
         } else {
           alert("Please enter a message first!");
         }
@@ -225,8 +225,7 @@
         const orderButtonText = orderButton.textContent.trim();
         // Display the text in the browser's console
         console.log(orderButtonText);
-        launchChat();
-        sendMessageToChat(orderButtonText);
+        launchChat(orderButtonText);
       });
       // Get the button element using its ID
       const caseButton = document.getElementById('caseButton');
