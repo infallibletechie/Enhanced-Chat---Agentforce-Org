@@ -104,27 +104,21 @@
 			/* START:: Conversation Opened Listener */
 			window.addEventListener("onEmbeddedMessagingConversationOpened", (event)=> {
 				hideChatContainer();
-			}
-
-			);
-
+			});
 			/* END:: Conversation Opened Listener */
+			
 			/* START:: Conversation Closed Listener */
 			window.addEventListener("onEmbeddedMessagingWindowClosed", (event)=> {
 				showChatContainer();
-			}
-
-			);
+			});
 
 			/* END:: Conversation Closed Listener */
 			/* START:: Button Created Listener */
 			window.addEventListener("onEmbeddedMessagingButtonCreated", (event)=> {
 				showChatContainer();
-			}
-
-			);
-
+			});
 			/* END:: Button Created Listener */
+			
 			embeddedservice_bootstrap.init('00DKj00000BqFBw',
 			'Enhanced_Chat',
 			'https://mduraipand-250112-382-demo.my.site.com/ESWEnhancedChat1763259170654',
