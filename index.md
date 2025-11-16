@@ -122,21 +122,21 @@
     <body>
         <div class="chat-container">
             <div>
-                Welcome to our Chat!!!
-                <br /><br /><br />
+                Welcome to our Chat Service!
+                <br/><br/><br/>
             </div>
             <div class="chat-input-area">
                 <input type="text" id="chatInput" class="chat-input" placeholder="Type a message..." />
                 <button class="send-button" id="sendBtn">➤</button>
             </div>
             <div>
-                <br /><br />
+                <br/><br/>
                 <button class="send-message-button" id="orderButton">
-                Need help with my Order
+                    Need help with my Order
                 </button>
-                <br /><br />
+                <br/><br/>
                 <button class="send-message-button" id="caseButton">
-                Need help with my Case
+                    Need help with my Case
                 </button>
             </div>
         </div>
@@ -178,7 +178,7 @@
                         .finally(() => {
                             console.log("Message sent - finally");
                         });
-                }, 1000);
+                }, 2000);
             }
             
             const sendBtn = document.getElementById('sendBtn');
@@ -200,6 +200,7 @@
                     sendBtn.click();
                 }
             });
+            
             // Get the button element using its ID
             const orderButton = document.getElementById('orderButton');
             // Add an event listener that runs a function when the button is clicked
@@ -210,6 +211,7 @@
                 console.log(orderButtonText);
                 launchChat(orderButtonText);
             });
+            
             // Get the button element using its ID
             const caseButton = document.getElementById('caseButton');
             // Add an event listener that runs a function when the button is clicked
