@@ -134,8 +134,8 @@
                 <button class="send-message-button" id="caseButton">
                     Need help with my Case
                 </button>
+                <br/><br/>
             </div>
-            <br/><br/>
             <div class="chat-input-area">
                 <input type="text" id="chatInput" class="chat-input" placeholder="Type a message..." />
                 <button class="send-button" id="sendBtn">➤</button>
