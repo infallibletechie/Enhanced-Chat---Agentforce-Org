@@ -139,16 +139,17 @@
 
 <body>
 	<div class="chat-container">
-		<div> Welcome to our Chat!!! <br /><br /><br />
+		<div> 
+			Welcome to our Chat!!! <br/><br/><br/>
 		</div>
 		<div class="chat-input-area">
 			<input type="text" id="chatInput" class="chat-input" placeholder="Type a message..." />
 			<button class="send-button" id="sendBtn">➤</button>
 		</div>
 		<div>
-			<br /><br />
+			<br/><br/>
 			<button class="send-message-button" id="orderButton"> Need help with my Order </button>
-			<br /><br />
+			<br/><br/>
 			<button class="send-message-button" id="caseButton"> Need help with my Case </button>
 		</div>
 	</div>
