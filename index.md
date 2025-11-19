@@ -183,7 +183,7 @@
                         .finally(() => {
                             console.log("Message sent - finally");
                         });
-                }, 5000);
+                }, 9000);
             }
             
             const sendBtn = document.getElementById('sendBtn');
