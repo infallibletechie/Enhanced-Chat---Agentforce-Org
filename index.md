@@ -82,22 +82,28 @@
                     embeddedservice_bootstrap.settings.hideChatButtonOnLoad = true;
                     
                     /* START:: Conversation Opened Listener */
-                    window.addEventListener("onEmbeddedMessagingConversationOpened", (event) => {
+                    window.addEventListener("onEmbeddedMessagingConversationOpened", () => {
                         hideChatContainer();
                     });
                     /* END:: Conversation Opened Listener */
         
                     /* START:: Conversation Closed Listener */
-                    window.addEventListener("onEmbeddedMessagingWindowClosed", (event) => {
+                    window.addEventListener("onEmbeddedMessagingWindowClosed", () => {
                         showChatContainer();
                     });
                     /* END:: Conversation Closed Listener */
         
                     /* START:: Button Created Listener */
-                    window.addEventListener("onEmbeddedMessagingButtonCreated", (event) => {
+                    window.addEventListener("onEmbeddedMessagingButtonCreated", () => {
                         showChatContainer();
                     });
                     /* END:: Button Created Listener */
+        
+                    /* START:: Participant Listener */
+                    window.addEventListener("onEmbeddedMessagingConversationParticipantChanged", (event) => {
+                        console.log( "Event detail: ", JSON.stringify( event.detail ) );
+                    });
+                    /* END:: Participant Listener */
         
                     embeddedservice_bootstrap.init(
                         '00DKj00000BqFBw',
