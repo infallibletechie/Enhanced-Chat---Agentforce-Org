@@ -11,7 +11,11 @@
                     console.log(JSON.stringify(tempContent));
                     const sessionData = JSON.parse(tempContent.conversationEntry.entryPayload);
 
-                    if (sessionData.sessionStatusPrev === "Active" && sessionData.sessionStatus === "Ended") {
+                    if (
+                        sessionData.sessionStatus === "Ended" &&
+                        sessionData.sessionStatusPrev === "Active" && 
+                        sessionData..sessionEndedByRole === 'Agent' 
+                    ) {
                         console.log("Active Session ended");
                         embeddedservice_bootstrap.userVerificationAPI
                         .clearSession()
