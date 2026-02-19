@@ -9,6 +9,23 @@
                 
                     const tempContent = event.detail;
                     console.log(JSON.stringify(tempContent));
+                    const sessionData = JSON.parse(tempContent.conversationEntry.entryPayload);
+
+                    if (sessionData.sessionStatusPrev === "Active" && sessionData.sessionStatus === "Ended") {
+                        console.log("Active Session ended");
+                        embeddedservice_bootstrap.userVerificationAPI
+                        .clearSession()
+                        .then(() => {
+                            console.log("Session cleared successfully.");
+                        })
+                        .catch((error) => {
+                            console.error("Error clearing session:", error);
+                        })
+                        .finally(() => {
+                            console.log("clearSession finally.");
+                            window.alert("You have opted out of Chat!!!");
+                        });
+                    }
                     
                     console.log("END:: Status Update");
                 });
