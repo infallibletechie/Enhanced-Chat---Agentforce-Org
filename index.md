@@ -14,7 +14,7 @@
                     if (
                         sessionData.sessionStatus === "Ended" &&
                         sessionData.sessionStatusPrev === "Active" && 
-                        sessionData..sessionEndedByRole === 'Agent' 
+                        sessionData.sessionEndedByRole === 'Agent' 
                     ) {
                         console.log("Active Session ended");
                         embeddedservice_bootstrap.userVerificationAPI
