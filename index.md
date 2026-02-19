@@ -23,6 +23,7 @@
                         })
                         .finally(() => {
                             console.log("clearSession finally.");
+                            window.alert("Agent Ended the Chat!!!");
                         });
                     }
                     
