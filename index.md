@@ -3,6 +3,15 @@
     	function initEmbeddedMessaging() {
     		try {
     			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+                window.addEventListener("onEmbeddedMessagingSessionStatusUpdate", (event) => {
+                    console.log("START:: Status Update");
+                
+                    const tempContent = event.detail;
+                    console.log(JSON.stringify(tempContent));
+                    
+                    console.log("END:: Status Update");
+                });
     
     			embeddedservice_bootstrap.init(
     				'00DKj00000BqFBw',
